@@ -29,6 +29,7 @@
   "scripts": {
     "sniff": "./vendor/bin/phpcs --standard=PSR2 --ignore=vendor,build ./",
     "test": "php ./vendor/bin/phpunit --bootstrap tests/bootstrap.php tests",
-    "coverage": "php ./vendor/bin/phpunit --coverage-clover build/clover.xml --coverage-html build/coverage --whitelist Classes tests"
+    "coverage": "php ./vendor/bin/phpunit --coverage-clover build/clover.xml --coverage-html build/coverage --whitelist Classes tests",
+    "zip": "zip -r ./build/basicauth.zip --exclude=vendor/* --exclude=build/* --exclude=.git* *"
   }
 }
