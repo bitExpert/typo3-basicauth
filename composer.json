@@ -1,5 +1,5 @@
 {
-  "name": "bitexpert/basic-authentication",
+  "name": "bitexpert/typo3-basic-authentication",
   "description": "Basic authentication (htaccess) support for frontend pages",
   "type": "typo3-cms-extension",
   "license": "Apache-2.0",
