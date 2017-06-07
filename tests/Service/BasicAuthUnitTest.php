@@ -1,13 +1,13 @@
 <?php
 
-namespace BitExpert\Tests\Service;
+namespace bitExpert\Tests\Service;
 
-use BitExpert\Basicauth\Service\BasicAuthService;
+use bitExpert\Basicauth\Service\BasicAuthService;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Class BasicAuthUnitTest
- * @package BitExpert\Tests\Service
+ * @package bitExpert\Tests\Service
  */
 class BasicAuthUnitTest extends TestCase
 {

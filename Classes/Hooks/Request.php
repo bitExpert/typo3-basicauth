@@ -1,20 +1,20 @@
 <?php
 
-namespace BitExpert\Basicauth\Hooks;
+namespace bitExpert\Basicauth\Hooks;
 
-use BitExpert\Basicauth\Service\BasicAuthService;
+use bitExpert\Basicauth\Service\BasicAuthService;
 use TYPO3\CMS\Core\SingletonInterface;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 /**
  * Class Request
- * @package BitExpert\Basicauth\Hooks
+ * @package bitExpert\Basicauth\Hooks
  */
 class Request implements SingletonInterface
 {
 
     /**
-     * @var \BitExpert\Basicauth\Service\BasicAuthService
+     * @var \bitExpert\Basicauth\Service\BasicAuthService
      */
     protected $basicAuthService;
 

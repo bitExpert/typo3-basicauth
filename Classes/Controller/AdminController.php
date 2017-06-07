@@ -1,19 +1,19 @@
 <?php
 
-namespace BitExpert\Basicauth\Controller;
+namespace bitExpert\Basicauth\Controller;
 
 use TYPO3\CMS\Core\Database\DatabaseConnection;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
 /**
  * Class AdminController
- * @package BitExpert\Basicauth\Controller
+ * @package bitExpert\Basicauth\Controller
  */
 class AdminController extends ActionController
 {
 
     /**
-     * @var \BitExpert\Basicauth\Service\BasicAuthService
+     * @var \bitExpert\Basicauth\Service\BasicAuthService
      * @inject
      */
     protected $basicAuthService;

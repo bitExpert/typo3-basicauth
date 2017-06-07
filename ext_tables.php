@@ -5,7 +5,7 @@ if (!defined('TYPO3_MODE')) {
 }
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerModule(
-    'BitExpert.' . $_EXTKEY,
+    'bitExpert.' . $_EXTKEY,
     'tools',
     'basicauth',
     '',

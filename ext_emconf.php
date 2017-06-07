@@ -29,7 +29,7 @@ $EM_CONF[$_EXTKEY] = [
     ],
     'autoload' => [
         'psr-4' => [
-            'BitExpert\\Basicauth\\' => 'Classes'
+            'bitExpert\\Basicauth\\' => 'Classes'
         ]
     ]
 ];

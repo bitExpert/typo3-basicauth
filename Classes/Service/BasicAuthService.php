@@ -1,10 +1,10 @@
 <?php
 
-namespace BitExpert\Basicauth\Service;
+namespace bitExpert\Basicauth\Service;
 
 /**
  * Class UserService
- * @package BitExpert\Basicauth\Service
+ * @package bitExpert\Basicauth\Service
  */
 class BasicAuthService
 {
