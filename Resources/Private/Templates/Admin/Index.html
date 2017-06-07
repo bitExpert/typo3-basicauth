@@ -1,0 +1,32 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+     xmlns:f="http://xsd.helmut-hummel.de/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:layout name="Default"/>
+    <title>Templates: Index</title>
+    <f:section name="main">
+
+        <div class="section">
+            <div class="content">
+
+                <p>
+                    {basicAuthInfo}
+                </p>
+
+                <f:if condition="{basicAuthEnabled} == 0">
+                    <f:then>
+                        <p>
+                            The website is publicly available.
+                        </p>
+                        <f:link.action action="enableBasicAuth">
+                            <button>Enable access protection</button>
+                        </f:link.action>
+                    </f:then>
+                    <f:else>
+                        <f:link.action action="disableBasicAuth">
+                            <button>Disable access protection</button>
+                        </f:link.action>
+                    </f:else>
+                </f:if>
+            </div>
+        </div>
+    </f:section>
+</div>

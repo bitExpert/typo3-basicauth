@@ -1,0 +1,27 @@
+{
+  "name": "bitexpert/basic-authentication",
+  "type": "typo3-cms-extension",
+  "license": "proprietary",
+  "description": "Basic authentication (htaccess) support for frontend pages",
+  "version": "1.0.0",
+  "replace": {
+    "basicauth": "self.version",
+    "typo3-ter/basicauth": "self.version"
+  },
+  "require-dev": {
+    "phing/phing": "^2.16",
+    "phpunit/phpunit": "^6.0.8",
+    "phpunit/php-code-coverage": "~5.0",
+    "squizlabs/php_codesniffer": "^2.8.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "BitExpert\\Basicauth\\": "./Classes"
+    }
+  },
+  "scripts": {
+    "sniff": "./vendor/bin/phpcs --standard=PSR2 --ignore=vendor,build ./",
+    "test": "php ./vendor/bin/phpunit --bootstrap tests/bootstrap.php tests",
+    "coverage": "php ./vendor/bin/phpunit --coverage-clover build/clover.xml --coverage-html build/coverage --whitelist Classes tests"
+  }
+}

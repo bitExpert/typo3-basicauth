@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<project name="Typo3 extension" default="help" basedir=".">
+
+    <!-- Helper tasks -mainly for initialization work -->
+    <target name="-local-properties-check">
+        <available file="${project.basedir}/build/local.properties" property="local-properties.exists"/>
+    </target>
+
+    <target name="-local-properties" if="local-properties.exists" depends="-local-properties-check">
+        <echo message="Loading local.properties. The settings might override global values defined in build.properties!"/>
+        <property file="${project.basedir}/build/local.properties" override="true"/>
+    </target>
+
+    <target name="-build-properties">
+        <echo message="Load default build.properties"/>
+        <property file="${project.basedir}/build/build.properties"/>
+    </target>
+
+    <target name="-init" depends="-build-properties, -local-properties" description="Initialize the build process">
+    </target>
+
+    <target name="help" depends="-init">
+        <echo message="Main Phing targets that can be called from command line. The following namespaces exist:" />
+        <echo message="app:*   Targets that deal with application specific tasks, e.g. the deployment" />
+        <echo message="" />
+        <echo message="Each namespace has it`s own help command to list all the tasks that can be called from command line." />
+    </target>
+
+    <import file="build/build.app.xml" />
+    <import file="build/build.qa.xml" />
+
+    <!-- Package Security Check, see also: https://security.sensiolabs.org/ -->
+    <import file="vendor/bitexpert/phing-securitychecker/build.xml" />
+</project>

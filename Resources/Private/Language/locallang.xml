@@ -1,0 +1,14 @@
+<T3locallang>
+    <meta type="array">
+        <description></description>
+        <type>module</type>
+        <csh_table/>
+        <labelContext type="array"/>
+    </meta>
+    <data type="array">
+        <languageKey index="default" type="array">
+            <label index="mlang_tabs_tab">Basic Auth</label>
+            <label index="mlang_labels_tabdescr">Basic authentication settings</label>
+        </languageKey>
+    </data>
+</T3locallang>
