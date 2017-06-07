@@ -17,11 +17,12 @@ access protection on the hole website or some sub pages.
 
 ### Composer
 
-@todo write instructions
+Run `composer require bitexpert/typo3-basic-authentication`
 
 ### Manual
- 1. Download zip file and extract to typo3conf/ext folder
+ 1. Download [zip file](https://typo3.org/extensions/repository/view/basicauth-1) and extract to typo3conf/ext folder
  1. Activate extension in Extension Manager
+ 1. (Only for composer mode) Add autoload entry to your composer.json file `"bitExpert\\Basicauth\\": "web/typo3conf/ext/basicauth/Classes"`
  
 ## Usage
  
